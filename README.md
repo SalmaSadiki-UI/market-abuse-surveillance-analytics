@@ -67,9 +67,9 @@ A real investigation would require additional client-level trading data, linked 
 
 ## AI Use
 
-AI was used as a learning and productivity tool for guidance, debugging, syntax support and review.
+AI tools were used selectively for learning support, debugging and refining parts of the workflow.
 
-The analysis, interpretation and final conclusions were manually reviewed and validated.
+All analysis steps, outputs and conclusions were reviewed and checked before being included in the final project.
 
 ## Project Structure
 
