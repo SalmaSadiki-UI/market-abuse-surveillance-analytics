@@ -83,12 +83,25 @@ The Tableau dashboard provides an interactive view of surveillance candidates, c
 
 ## Project Structure
 
-- `market_abuse_dashboard.png` — final Tableau dashboard preview
-- `investigation_log.png` — spreadsheet-based investigation workflow
+### 1. Data Preparation
 - `01_data_cleaning.sql` — data preparation and field interpretation
-- `02_exploratory_analysis.sql` — exploratory analysis and behavioural baselines
-- `03_surveillance_detection.sql` — surveillance candidate detection logic
+
+### 2. Exploratory Analysis
+- `02_exploratory_analysis.sql` — event behaviour, cancellation patterns and order-size baselines
+
+### 3. Surveillance Detection
+- `03_surveillance_detection.sql` — identification of large, rapidly cancelled orders
+
+### 4. Case Investigation
 - `04_case_investigation.sql` — order-book context and prioritisation logic
-- `market_abuse_surveillance.ipynb` — Python analysis and visualisation
+
+### 5. Python Prioritisation
+- `market_abuse_surveillance.ipynb` — risk labelling, ranking and visual analysis
 - `top_10_surveillance_candidates.csv` — final prioritised surveillance cases
-- Tableau workbook / interactive dashboard — dashboard presentation layer
+
+### 6. Investigation Workflow
+- `investigation_log.png` — spreadsheet-based review, escalation and outcome tracking
+
+### 7. Dashboard & Presentation
+- `market_abuse_dashboard.png` — final Tableau dashboard preview
+- Tableau Public — interactive dashboard
