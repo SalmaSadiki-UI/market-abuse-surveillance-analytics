@@ -57,6 +57,10 @@ The top surveillance candidates were reviewed using a structured spreadsheet inv
 
 The strongest cases were escalated for secondary review rather than labelled as confirmed market abuse.
 
+### Investigation Review Log
+
+![Market Abuse Investigation Log](investigation_log.png)
+
 ## Limitations
 
 This dataset does not contain client or participant identifiers.
@@ -71,11 +75,20 @@ AI tools were used selectively for learning support, debugging and refining part
 
 All analysis steps, outputs and conclusions were reviewed and checked before being included in the final project.
 
+## Interactive Dashboard
+
+The Tableau dashboard provides an interactive view of surveillance candidates, cancellation speed, relative visible liquidity and risk prioritisation.
+
+[View the interactive Tableau dashboard](https://public.tableau.com/app/profile/salma.sadiki.aalouane/viz/MarketAbuseSurveillanceAnalyticsAAPLOrder-BookInvestigation/Dashboard1?publish=yes)
+
 ## Project Structure
 
-- `market_abuse_dashboard.png` — final dashboard preview
-- SQL analysis files
-- Python surveillance analysis
-- surveillance candidate CSV
-- spreadsheet investigation workflow
-- Tableau workbook / interactive dashboard
+- `market_abuse_dashboard.png` — final Tableau dashboard preview
+- `investigation_log.png` — spreadsheet-based investigation workflow
+- `01_data_cleaning.sql` — data preparation and field interpretation
+- `02_exploratory_analysis.sql` — exploratory analysis and behavioural baselines
+- `03_surveillance_detection.sql` — surveillance candidate detection logic
+- `04_case_investigation.sql` — order-book context and prioritisation logic
+- `market_abuse_surveillance.ipynb` — Python analysis and visualisation
+- `top_10_surveillance_candidates.csv` — final prioritised surveillance cases
+- Tableau workbook / interactive dashboard — dashboard presentation layer
